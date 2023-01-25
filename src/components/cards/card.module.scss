@@ -1,0 +1,64 @@
+@import '../../styles/queries.scss';
+
+.card {
+    width: 100%;
+    padding: 24px 24px 24px 16px;
+    display: flex;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 12px;
+    .poster {
+        margin-right: 16px;
+        width: 120px;
+        height: 100%;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+    .author {
+        font-size: 16px;
+        line-height: 24px;
+        color: #727272;
+        margin-bottom: 24px;
+    }
+    .raiting {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #A7A7A7;
+        margin-bottom: 22px;
+        @include mediaPhone {
+            margin-bottom: 19px;
+        }
+    }
+
+    .orderButton {
+        background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+        border-radius: 20px;
+        border: none;
+        padding: 11px 27px;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        cursor: pointer;
+        @include mediaPhone {
+            padding: 11px 68px;
+        }
+    }
+}

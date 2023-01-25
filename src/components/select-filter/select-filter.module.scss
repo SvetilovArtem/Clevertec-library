@@ -1,0 +1,45 @@
+@import '../../styles/queries.scss';
+
+.selectFilter {
+    position: relative;
+    width: 150px;
+    padding: 10px 2px 10px 40px;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+    margin-left: 16px;
+    @include mediaPhone {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        padding: 8px;
+    }
+
+    .filterIcon {
+        background-image: url(../../icons/icon-sort.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        @include mediaPhone {
+            top: 11.5px;
+            left: 10.5px;
+        }
+
+    }
+    select {
+        border: none;
+        appearance: none;
+        outline: none;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1px;
+        color: #A7A7A7;
+        @include mediaPhone {
+            display: none;
+        }
+    }
+}

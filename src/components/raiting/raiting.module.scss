@@ -1,0 +1,14 @@
+.raiting {
+
+    height: 19px;
+    .star {
+        width: 20px;
+        height: 19px;
+        border: none;
+        display: inline-block;
+    }
+    .star:not(:last-child) {
+        margin-right: 10px;
+    }
+
+}

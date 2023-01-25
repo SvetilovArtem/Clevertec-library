@@ -1,0 +1,21 @@
+$mobileMax: 720px;
+$tabletMax: 1100px;
+$desktop: 1440px;
+
+@mixin mediaPhone {
+    @media (max-width: $mobileMax) {
+      @content;
+    }
+}
+
+@mixin mediaTablet {
+    @media (max-width: $tabletMax) {
+      @content;
+    }
+}
+
+@mixin mediaDesktop {
+    @media (max-width: $desktop) {
+        @content;
+    }
+}

@@ -1,0 +1,46 @@
+@import '../../styles/queries.scss';
+
+.sidebar {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.08rem;
+    min-width: 255px;
+    margin-right: 30px;
+    @include mediaTablet {
+        display: none;
+    }
+    .sidebarMenu {
+        margin-bottom: 42px;
+    }
+    .sidebarItemActive {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+        padding-bottom: 8px;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+        border-image-slice: 1;
+    }
+    .sidebarItem:not(:last-child) {
+        margin-bottom: 42px;
+    }
+    .booksList {
+        padding-left: 20px;
+        margin-top: 16px;
+        .book {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        .book:not(:last-child) {
+            margin-bottom: 16px;
+        }
+        .bookIsActive {
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+            margin-bottom: 16px;
+        }
+    }
+}

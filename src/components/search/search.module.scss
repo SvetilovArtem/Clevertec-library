@@ -1,0 +1,44 @@
+@import '../../styles/queries.scss';
+.searchBlock {
+    position: relative;
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 599px;
+    padding: 10px 10px 10px 40px;
+    width: 350px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #A7A7A7;
+    @include mediaTablet {
+        width: 274px;
+    }
+    @include mediaPhone {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        padding: 8px;
+    }
+    .search {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        width: 100%;
+        @include mediaPhone {
+            display: none;
+        }
+    }
+    .searchIcon {
+        position: absolute;
+        background-image: url(../../icons/search-icon.svg);
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        top: 12px;
+        left: 17px;
+        @include mediaPhone {
+            top: 8px;
+            left: 8px;
+        }
+    }
+}

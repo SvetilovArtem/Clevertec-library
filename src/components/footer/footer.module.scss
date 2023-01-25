@@ -1,0 +1,83 @@
+@import '../../styles/queries.scss';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #BFC4C9;
+    padding: 16px 0;
+    letter-spacing: 0.05rem;
+    margin-top: auto;
+    @include mediaPhone {
+        display: block;
+        text-align: center;
+    }
+    .left {
+        display: flex;
+        align-items: center;
+        @include mediaPhone {
+            margin: 0 auto;
+            margin-bottom: 19px;
+            justify-content: center;
+            align-items: initial;
+            max-width: 200px;
+        }
+        .attention {
+            font-size: 16px;
+            line-height: 24px;
+            @include mediaPhone {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+        .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #363636;
+            border-radius: 50%;
+            font-size: 10px;
+            line-height: 10px;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            @include mediaPhone {
+                margin-right: 1px;
+            }
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        @include mediaPhone {
+            justify-content: center;
+        }
+        .fb {
+            background-image: url(../../icons/fb.svg);
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 18px;
+            margin-right: 34px;
+        }
+        .inst {
+            background-image: url(../../icons/inst.svg);
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            margin-right: 28px;
+        }
+        .vk {
+            background-image: url(../../icons/vk.svg);
+            background-repeat: no-repeat;
+            width: 22px;
+            height: 13px;
+            margin-right: 28px;
+        }
+        .ln {
+            background-image: url(../../icons/ln.svg);
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 19px;
+        }
+    }
+}
